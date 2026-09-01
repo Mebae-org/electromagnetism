@@ -1,0 +1,7 @@
+# MAGI
+blank_issues_enabled: false
+contact_links:
+  - name: 質問・雑談
+    url: https://github.com/Mebae-org/course-template/discussions
+    about: 誤り報告・提案以外の質問や相談はこちら（Discussions）へどうぞ。
+# /MAGI

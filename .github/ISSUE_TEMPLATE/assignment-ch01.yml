@@ -1,0 +1,35 @@
+# MAGI
+name: 課題01 [CHAPTER TITLE] の提出
+description: 第1章「[CHAPTER TITLE]」の課題を提出します
+title: "[課題01] [CHAPTER TITLE]"
+labels: ["assignment", "ch01"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        各問の答えを半角数字で入力してください。単位や途中式は入力しないでください。
+        Issue の作成後、GitHub Actions が自動で採点します。回答を修正すると再採点されます。
+  - type: input
+    id: q1
+    attributes:
+      label: 問1
+      description: "[NUMERIC QUESTION 1]"
+      placeholder: "例: 42 または 3.14"
+    validations:
+      required: true
+  - type: input
+    id: q2
+    attributes:
+      label: 問2
+      description: "[NUMERIC QUESTION 2]"
+      placeholder: "例: -5 または 1.2e3"
+    validations:
+      required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: 公開回答への同意
+      options:
+        - label: 回答が公開されることを理解し、公開に同意します
+          required: true
+# /MAGI
