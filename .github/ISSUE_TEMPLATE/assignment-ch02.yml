@@ -1,7 +1,7 @@
-name: 課題01 静電場 の提出
-description: 第1章「静電場」の課題を提出します
-title: "[課題01] 静電場"
-labels: ["assignment", "ch01"]
+name: 課題02 直流回路 の提出
+description: 第2章「直流回路」の課題を提出します
+title: "[課題02] 直流回路"
+labels: ["assignment", "ch02"]
 body:
   - type: markdown
     attributes:
@@ -12,24 +12,24 @@ body:
     id: q1
     attributes:
       label: 問1
-      description: "真空中に、+5.0 μC の点電荷と -2.0 μC の点電荷を 0.50 m 離して置いた。2つの電荷の間にはたらく静電気力の大きさは何 N か。数値のみを答えよ。"
-      placeholder: "例: 0.36"
+      description: "100 V の電圧を 40 Ω の抵抗に加えた。流れる電流は何 A か。数値のみを答えよ。"
+      placeholder: "例: 2.5"
     validations:
       required: true
   - type: input
     id: q2
     attributes:
       label: 問2
-      description: "+1.0 nC の点電荷から 0.10 m 離れた点の電位は何 V か。数値のみを答えよ。"
-      placeholder: "例: 90"
+      description: "8.0 Ω と 24 Ω の抵抗を直列に接続した。合成抵抗は何 Ω か。数値のみを答えよ。"
+      placeholder: "例: 32"
     validations:
       required: true
   - type: input
     id: q3
     attributes:
       label: 問3
-      description: "電気容量 5.0 μF のコンデンサに 40 μC の電荷を蓄えた。両極板間の電圧は何 V か。数値のみを答えよ。"
-      placeholder: "例: 8"
+      description: "20 Ω の電熱器に 100 V の電圧を 3.0 分間加えた。発生するジュール熱は何 kJ か。数値のみを答えよ。"
+      placeholder: "例: 90"
     validations:
       required: true
   - type: checkboxes

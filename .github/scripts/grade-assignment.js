@@ -1,12 +1,18 @@
 const crypto = require("node:crypto");
 
 module.exports = async ({ github, context, core }) => {
-  // 下の値は PLACEHOLDER-1 / 2 のハッシュ。生成した正答ハッシュに差し替える。
-  // 正答の平文はリポジトリに置かない。
+  // 正答はハッシュのみで保持する。正答の平文はリポジトリに置かない。
+  // ハッシュは scripts/make-answer-hash.js で生成する。
   const assignments = {
     ch01: [
-      { label: "問1", hash: "954314516526bcb5ab0d799b23db74cf43412c2e0267eaf74f7d38b18837cc4b" },
-      { label: "問2", hash: "180f643b5a41152b1faae18ab693f8fe98fb47ebcf8274c7ef70bc1836a9ad1a" }
+      { label: "問1", hash: "9c9e5b4a9207b3c014ac5ebe6b6ff68d0fcef40c4c92d575950cfa6d89e7a928" },
+      { label: "問2", hash: "69f59c273b6e669ac32a6dd5e1b2cb63333d8b004f9696447aee2d422ce63763" },
+      { label: "問3", hash: "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3" }
+    ],
+    ch02: [
+      { label: "問1", hash: "b8736b999909049671d0ea075a42b308a5fbe2df1854899123fe09eb0ee9de61" },
+      { label: "問2", hash: "e29c9c180c6279b0b02abd6a1801c7c04082cf486ec027aa13515e4f3884bb6b" },
+      { label: "問3", hash: "69f59c273b6e669ac32a6dd5e1b2cb63333d8b004f9696447aee2d422ce63763" }
     ]
   };
   const issue = context.payload.issue;
